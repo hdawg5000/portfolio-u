@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+* {
+    font-family: "San Francisco", sans-serif;
+}
+
+body {
+    margin: 30px;
+}
+
+/* Header */
+
+header {
+    height: 200px;
+}
+
+#title {
+    float: right;
+    display: inline;
+    line-height: 150%;
+    padding-top: 20px;
+}
+
+#name {
+    font-size: 3em;
+    text-align: right;
+}
+
+#descripton {
+    text-align: right;
+}
+
+#logo {
+    float: left;
+    display: block;
+    width: 140px;
+    height: auto;
+}
+
+hr {
+    border-width: 2px;
+    display: block;
+    border-style: inset;
+    margin: 0.5em;
+}
+
+/* Main Content */
+
+#main-img {
+    width: 100%;
+    height: auto;
+}
+
+#appify {
+    width: 33%;
+    display: inline;
+}
+
+#sunflower {
+    width: 33%;
+    display: inline;
+}
+
+#bokeh {
+    width: 33%;
+    display: inline;
+}
+
+.projects img {
+    width: 200px;
+    height: auto;
+}
+
+.projects {
+    display: inline;
+    width: 100%
+}
+
+figcaption, #title {
+    text-transform: uppercase;
+}
