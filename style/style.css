@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 200;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+    font-family: "San Francisco";
+    font-weight: 200;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
 }
 
 * {
@@ -12,17 +12,23 @@ body {
     margin: 30px;
 }
 
+
 /* Header */
 
 header {
-    height: 200px;
+    height: 226px;
+}
+
+#heading {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #title {
-    float: right;
-    display: inline;
+    width: 50%;
     line-height: 150%;
     padding-top: 20px;
+    text-align: right;
 }
 
 #name {
@@ -30,23 +36,23 @@ header {
     text-align: right;
 }
 
-#descripton {
-    text-align: right;
+#picture {
+    width: 50%;
 }
 
 #logo {
-    float: left;
-    display: block;
     width: 140px;
     height: auto;
+    padding: 20px 0 0 0;
 }
 
 hr {
     border-width: 2px;
-    display: block;
+    display: flex;
     border-style: inset;
     margin: 0.5em;
 }
+
 
 /* Main Content */
 
@@ -63,146 +69,179 @@ hr {
 
 #appify {
     width: 33%;
-    display: inline-block;
-    margin: 0px;
 }
 
 #sunflower {
     width: 33%;
-    display: inline-block;
-    margin: 0px;
 }
 
 #bokeh {
     width: 33%;
-    display: inline-block;
-    margin: 0px;
 }
 
 .projects img {
     width: 200px;
     height: auto;
-    display: block;
+    display: flex;
     margin: auto;
 }
 
 .projects {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%
 }
 
 figcaption {
     font-size: 40px;
-}
-
-figcaption, #title {
-    text-transform: uppercase;
-}
-
-figcaption, figure > p {
     text-align: center;
 }
 
-@media screen and (max-width: 510px) {
+figcaption,
+#title {
+    text-transform: uppercase;
+}
+
+#appify,
+#sunflower,
+#bokeh > p {
+    text-align: center;
+}
+
+@media screen and (max-width: 380px) {
     #appify {
         width: 100%;
-        display: block;
+        order: 0;
         margin: 0px;
         padding: 10px;
     }
-
     #sunflower {
         width: 100%;
-        display: block;
+        order: 1;
         margin: 0px;
         padding: 10px;
     }
-
     #bokeh {
         width: 100%;
-        display: block;
+        order: 2;
         margin: 0px;
         padding: 10px;
     }
-    
+    #logo {
+        width: 120px;
+        height: auto;
+        margin: auto;
+        display: flex;
+    }
+    #name {
+        font-size: 1em;
+        text-align: center;
+    }
+    #description {
+        font-size: 0.5em;
+        text-align: center;
+    }
+    #featured-title {
+        text-align: center;
+    }
+    #picture {
+        order: 0;
+        width: 100%;
+    }
+    #title {
+        order: 1;
+        width: 100%;
+    }
+    header {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width: 510px) {
+    #appify {
+        width: 100%;
+        order: 0;
+        margin: 0px;
+        padding: 10px;
+    }
+    #sunflower {
+        width: 100%;
+        order: 1;
+        margin: 0px;
+        padding: 10px;
+    }
+    #bokeh {
+        width: 100%;
+        order: 2;
+        margin: 0px;
+        padding: 10px;
+    }
     #logo {
         width: 120px;
         height: auto;
     }
-    
     #name {
         font-size: 1em;
     }
-    
     #description {
         font-size: 0.5em;
     }
-    
     #featured-title {
         text-align: center;
     }
 }
 
-@media screen and (min-width: 511px) and (max-width: 799px) {
+@media screen and (min-width: 511px) and (max-width: 812px) {
     #appify {
         width: 100%;
-        display: block;
+        order: 0;
         margin: 0px;
         padding: 10px;
     }
-
     #sunflower {
         width: 100%;
-        display: block;
+        order: 1;
         margin: 0px;
         padding: 10px;
     }
-
     #bokeh {
         width: 100%;
-        display: block;
+        order: 2;
         margin: 0px;
         padding: 10px;
     }
-    
     #name {
-        font-size: 2em;
+        font-size: 1.5em;
     }
-    
     #featured-title {
         font-size: 2em;
         text-align: center;
     }
-    
     #description {
         font-size: 1em;
     }
-    
     figcaption {
-        font-size: 2em;   
+        font-size: 2em;
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 813px) {
     #appify {
         width: 33%;
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
         margin: 0px;
     }
-
     #sunflower {
         width: 33%;
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
         margin: 0px;
     }
-
     #bokeh {
         width: 33%;
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
         margin: 0px;
-    }
-    
-    #featured-title {
-        text-align: center;
     }
 }
